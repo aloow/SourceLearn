@@ -13,9 +13,12 @@
 		5372B1972481E4B90093B5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5372B1952481E4B90093B5A2 /* Main.storyboard */; };
 		5372B1992481E4C80093B5A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5372B1982481E4C80093B5A2 /* Assets.xcassets */; };
 		5372B19C2481E4C80093B5A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5372B19A2481E4C80093B5A2 /* LaunchScreen.storyboard */; };
+		80BD391F734F7599A163F5DE /* Pods_SourceLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA61632A6427A6DACD1C7808 /* Pods_SourceLearn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13ACA69C0A18028930775C5F /* Pods-SourceLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SourceLearn.release.xcconfig"; path = "Target Support Files/Pods-SourceLearn/Pods-SourceLearn.release.xcconfig"; sourceTree = "<group>"; };
+		3486CDA35FC57424CDE10C51 /* Pods-SourceLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SourceLearn.debug.xcconfig"; path = "Target Support Files/Pods-SourceLearn/Pods-SourceLearn.debug.xcconfig"; sourceTree = "<group>"; };
 		5372B18C2481E4B90093B5A2 /* SourceLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SourceLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5372B18F2481E4B90093B5A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5372B1912481E4B90093B5A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		5372B1982481E4C80093B5A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5372B19B2481E4C80093B5A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5372B19D2481E4C80093B5A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA61632A6427A6DACD1C7808 /* Pods_SourceLearn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SourceLearn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80BD391F734F7599A163F5DE /* Pods_SourceLearn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1644521A49EFD90A4414FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3486CDA35FC57424CDE10C51 /* Pods-SourceLearn.debug.xcconfig */,
+				13ACA69C0A18028930775C5F /* Pods-SourceLearn.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1B3417228ED7BCC98381D436 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA61632A6427A6DACD1C7808 /* Pods_SourceLearn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5372B1832481E4B90093B5A2 = {
 			isa = PBXGroup;
 			children = (
 				5372B18E2481E4B90093B5A2 /* SourceLearn */,
 				5372B18D2481E4B90093B5A2 /* Products */,
+				0A1644521A49EFD90A4414FA /* Pods */,
+				1B3417228ED7BCC98381D436 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5372B1A02481E4C80093B5A2 /* Build configuration list for PBXNativeTarget "SourceLearn" */;
 			buildPhases = (
+				A7D8FD74CD6542ABDF084AAC /* [CP] Check Pods Manifest.lock */,
 				5372B1882481E4B90093B5A2 /* Sources */,
 				5372B1892481E4B90093B5A2 /* Frameworks */,
 				5372B18A2481E4B90093B5A2 /* Resources */,
+				CE704DB2CFFCBCF39BD4F5F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7D8FD74CD6542ABDF084AAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SourceLearn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE704DB2CFFCBCF39BD4F5F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SourceLearn/Pods-SourceLearn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SourceLearn/Pods-SourceLearn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SourceLearn/Pods-SourceLearn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5372B1882481E4B90093B5A2 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		5372B1A12481E4C80093B5A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3486CDA35FC57424CDE10C51 /* Pods-SourceLearn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		5372B1A22481E4C80093B5A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13ACA69C0A18028930775C5F /* Pods-SourceLearn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
